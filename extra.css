@@ -1,0 +1,4 @@
+/* hover css banner->list->item (each image is under each class item) */
+.list:hover .item:not(:hover){
+    filter: grayscale(1) blur(10px);
+}

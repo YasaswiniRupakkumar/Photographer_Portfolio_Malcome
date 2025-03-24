@@ -1,0 +1,77 @@
+nav{
+    background-color:white;
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    z-index: 1000000000;
+    justify-content: space-between; /* Distribute items left and right */
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul{
+    width: 100%;
+    gap: 70px; /* Space between links */
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: right;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar{
+    display: flex;
+}
+
+.sidebar .logo{
+    align-items: right;
+}
+
+
+.links a{
+    /* height: 100%; */
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    z-index: 1000000000;
+}
+.links{
+    z-index: 1000000000;
+    display: none; /* Hide the links section initially */   
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-sizing: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1000000000;
+}
+
+.links li{
+    width: 100%;
+}
+.links a{
+    width: 100%;
+}

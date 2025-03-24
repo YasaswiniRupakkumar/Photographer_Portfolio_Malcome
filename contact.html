@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="formStyle.css">
+    <script src="cursor.js" defer></script>
+</head>
+<body>
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="div contact-container">
+        <form  action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="e11ed542-738c-4b10-9602-f3a77073ccec">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <!-- <label for="package">Package Interested</label> -->
+            <select name="package" id="package" class="contact-inputs" required>
+                <option value="" disabled selected>Package Interested</option>
+                <option value="wedding">Wedding</option>
+                <option value="special_occation">Special Occasion</option>
+                <option value="portrait">Portrait</option>
+                <option value="nature">Nature</option>
+                <option value="not_sure">Not Sure</option>
+            </select>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit<img src="assets/arrow_icon.png"></button>
+        </form>
+        <div class="contact-right">
+            <img src="assets/right_img.png">
+        </div>
+    </div>
+</body>
+</html>

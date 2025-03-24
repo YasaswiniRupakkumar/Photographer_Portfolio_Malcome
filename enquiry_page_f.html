@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enquiry</title>
+  <!-- <script language="javascript">
+    function formvalidation(thisform) {
+      with (thisform) {
+        if (!nameValidation(name)) {
+            return false;
+        }
+        if (!phonenoValidation(phoneno)) {
+          return false;
+        }
+        if (!emailValidation(email)) {
+          return false;
+        }
+        if (!locationValidation(location)) {
+          return false;
+        }
+        if (!dateValidation(date)) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function nameValidation(name){
+        if (name.value == "") {
+        alert("Name is not entered");
+        name.focus();
+        return false;
+      } else {
+        var nl = name.value.length;
+        if (nl > 20) {
+          alert("Name cannot exceed 20 characters");
+          name.focus();
+          name.value = "";
+          return false;
+        } else {
+          return true;
+        }
+      }
+    }
+
+    function phonenoValidation(phoneno) {
+      if (phoneno.value == "") {
+        alert("Phone Number is not entered");
+        phoneno.focus();
+        return false;
+      } else {
+        var pno = phoneno.value.length;
+        if (pno != 10) {
+          alert("Phone Number should be 10 characters long");
+          phoneno.focus();
+          phoneno.value = "";
+          return false;
+        } else {
+          return true;
+        }
+      }
+    }
+
+    function emailValidation(email) {
+      if (email.value == "") {
+        alert("Email Address is not entered");
+        email.focus();
+        return false;
+      } else {
+        if (email.value.length > 254) {
+          alert("Email address cannot exceed 254 characters");
+          email.focus();
+          email.value = "";
+          return false;
+        } else {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,6}$/i;
+          if (!emailRegex.test(email.value.trim())) {
+            alert("Invalid Email Address");
+            email.focus();
+            email.value = "";
+            return false;
+          } else {
+            return true;
+          }
+        }
+      }
+    }
+
+    function locationValidation(location) {
+      if (location.value == "") {
+        alert("Location is Not Entered");
+        location.focus();
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    function dateValidation(date) {
+      if (date.value == "") {
+        alert("Date is Not Entered");
+        date.focus();
+        return false;
+      } else {
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        if (!dateRegex.test(date.value)) {
+          alert("Invalid date format. Please use YYYY-MM-DD");
+          date.focus();
+          date.value = "";
+          return false;
+        }
+
+        const parts = date.value.split('-');
+        const year = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10);
+        const day = parseInt(parts[2], 10);
+
+        if (year < 1900 || year > 2080 || month < 1 || month > 12 || day < 1 || day > 31) {
+          alert("Invalid date");
+          date.focus();
+          date.value = "";
+          return false;
+        }
+
+        if (month === 2) {
+          const isLeap = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+          if (day > (isLeap ? 29 : 28)) {
+            alert("Invalid date");
+            date.focus();
+            date.value = "";
+            return false;
+          }
+        }
+
+        if ([4, 6, 9, 11].includes(month) && day > 30) {
+          alert("Invalid date");
+          date.focus();
+          date.value = "";
+          return false;
+        }
+
+        return true;
+      }
+    }
+  </script>
+</head>
+<body bgcolor="#FFCCFF">
+    <center>Information Sent successfully, thank you for contacting ! </center>
+<form action="enquiry_page.php" method="POST" name="form1" onSubmit="return formvalidation(this)">
+  <table align="center" cellpadding="5" cellspacing="5">
+    <caption><h2>Contact Me</h2></caption>
+    <tr>
+        <th align="left">Name<label style="color:rgb(202, 0, 0);">*</label> :</th>
+        <td><input name="name" type="text"></td>
+    </tr>
+    <tr>
+      <th align="left">Phone Number (WhatsApp)<label style="color:rgb(202, 0, 0);">*</label> :</th>
+      <td><input name="phoneno" type="text"></td>
+    </tr>
+    <tr>
+      <th align="left">Email<label style="color:rgb(202, 0, 0);">*</label> :</th>
+      <td><input name="email" type="text"></td>
+    </tr>
+    <tr>
+      <th align="left">Location<label style="color:rgb(202, 0, 0);">*</label> :</th>
+      <td><input name="location" type="text"></td>
+    </tr>
+    <tr>
+      <th align="left">Date of booking (YYYY-MM-DD)<label style="color:rgb(202, 0, 0);">*</label> :</th>
+      <td><input name="date" type="text"></td>
+    </tr>
+    <tr>
+      <th align="left">Other Details:</th>
+      <td><textarea cols="50" name="other" rows="10"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Insert">
+        <input type="reset" value="Clear"></td>
+    </tr>
+  </table>
+</form>
+<div align="center">
+  <a href="home_page.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="about_page.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="prices_page.html">Prices</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="gallery_page.html">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="enquiry_page.html">Enquiry</a>
+</div> -->
+</body>
+</html>

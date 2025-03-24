@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.enquire-link {
+    font-size: 60px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+/* .enquire-link:hover {
+    cursor: url("data:image/svg+xml;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMDAwMDAwIiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAxOTIwIDE5MjAiPgogIDxwYXRoIGQ9Im0xMzA0LjgyNCAzNDUuMDAyLTgxLjI1IDgxLjI0OSA0NzYuNDY2IDQ3Ni41ODJIMHYxMTQuOTIyaDE3MDAuMDRsLTQ3Ni40NjYgNDc2LjQ2NSA4MS4yNSA4MS.yNUwxOTIwIDk2MC4yOTN6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg=="), pointer;
+}  */
+
+.enquire-link:hover {
+    cursor: url('Aniket-Suvarna-Box-Regular-Bx-right-arrow.svg') 24 24, auto;
+  }

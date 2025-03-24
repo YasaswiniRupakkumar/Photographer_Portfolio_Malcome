@@ -1,0 +1,98 @@
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=SUSE:wght@100..800&display=swap');
+.about-q hr {
+    border: 2.7px solid black; /* Adjust border width and color /*/
+    width: 35%; /* Adjust line width */
+    margin: 0 0; /* Adjust top and bottom margins */
+}
+.about-q {
+    justify-content: space-between;
+}
+
+.about-q ul {
+    display: flex;
+    list-style: none;
+    padding: 40;
+}
+
+.left-aligned {
+    text-align: left;
+    width: 66%;
+    font-size: 65px;
+    font-family: 'ICA Rubrik';
+}
+
+.about-d hr {
+    border: 2.7px solid black; /* Adjust border width and color */
+    margin: 0 0 0 65%;
+}
+
+.about-d {
+    justify-content: space-between;
+}
+
+.right-aligned {
+    text-align: right;
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 0 10;
+    font-family: "SUSE", sans-serif;
+    padding: 0 0 0 69%;
+}
+
+.about-d ul{
+    width: 100%;
+}
+
+.about-vm hr {
+    border: 2.7px solid black; /* Adjust border width and color */
+    /* margin: 0 0 0 65%; */
+}
+
+.about-vm {
+    justify-content: space-between;
+}   
+
+.about-vm ul {
+    display: flex;
+    list-style: none;
+    /* padding: 40; */
+}
+
+.vision{
+    text-align: center;
+    font-size: 35px;
+    line-height: 2.0;
+    padding: 0 0;
+    font-family: "SUSE", sans-serif;
+    width: 50%;
+}
+
+.vision center{
+    font-size: 40px;
+    line-height: 2.0;
+    padding: 0 0;
+    font-family: 'ICA Rubrik';
+    width: 100%;
+}
+
+.mission{
+    text-align: center;
+    font-size: 35px;
+    line-height: 2.0;
+    padding: 0 0;
+    font-family: "SUSE", sans-serif;
+    margin-left: 40%;
+    width: 50%;
+}
+
+.mission center{
+    font-size: 40px;
+    line-height: 2.0;
+    padding: 0 0;
+    font-family: 'ICA Rubrik';
+    width: 100%;
+}
+
+

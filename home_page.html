@@ -1,0 +1,514 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GallerySlider/cardSlider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_t.css">
+    <link rel="stylesheet" href="cursor.css">
+    <link rel="stylesheet" href="slider.css"> 
+    <link rel="stylesheet" href="about.css"> 
+    <link rel="stylesheet" href="Pricing.css"> 
+    <link rel="stylesheet" href="fade.css"> 
+    <link rel="stylesheet" href="about_text.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="gallerystyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js" defer></script>
+    <script src="about_text.js" defer></script>
+    <script src="cursor.js" defer></script>
+    <script src="navbar.js" defer></script>
+    <script src="gallery.js" defer></script>
+    <script src="hidemodel.js" defer></script>
+    <script src="hidecursor.js" defer></script>
+    <!-- <script src="stopSticky.js" defer></script> -->
+    <!-- <script src="navbartry.js" defer></script> -->
+<script type='text/javascript'> 
+    title = "| Malcolm Lismore ";
+    position = 0;
+    function scrolltitle() {
+        document.title = title.substring(position, title.length) + title.substring(0, position); 
+        position++;
+        if (position > title.length) position = 0;
+        titleScroll = window.setTimeout(scrolltitle,500);
+    }
+    scrolltitle();
+    </script>
+</head>
+<body bgcolor="#ffffff">
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="fixed-section">
+            <section id="section1">
+                <!-- container to section1nav  -->
+                <nav>
+                    <div class="sidebar">
+                        <ul>
+                            <li onclick=showLinks()>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                            </li>
+                            <li>
+                                <h3 class="logo">Malcolm <span>Lismore</span></h3>
+                            </li>
+                            <li>
+                                <a href="#section1">Home</a>
+                            </li>
+                            <li>
+                                <a href="#section2">About</a>
+                            </li>
+                            <li>
+                                <a href="#section3">Prices</a>
+                            </li>
+                            <li>
+                                <a href="#section4">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#section5">Enquire</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </nav>
+                    <div class="links">
+                        <ul>
+                            <li onclick=hideLinks()>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                            </li>
+                            <li>
+                                <a href="#section1">Home</a>
+                            </li>
+                            <li>
+                                <a href="#section2">About</a>
+                            </li>
+                            <li>
+                                <a href="#section3">Prices</a>
+                            </li>
+                            <li>
+                                <a href="#section4">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#section5">Enquire</a>
+                            </li>
+                            <li>
+                                <a href="#section6">Other Links</a>
+                            </li>
+                            <li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16981.82186904082!2d-5.5310750548483485!3d57.85686458038037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488e6aed1b6edf6d%3A0x6a9fc72cf1459fb6!2sSecond%20Coast%2C%20Achnasheen%20IV22%202NF%2C%20UK!5e0!3m2!1sen!2slk!4v1734418944215!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </li>
+                            <!-- <li>
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                            </li> -->
+                        </ul>
+                    </div>  
+ 
+                
+            
+                <!-- <nav class="navbar">
+                    <div class="navdiv">
+                        <div class="logo">
+                            <a href="#">Malcolm Lismore</a>
+                        </div>
+                        <ul>
+                            <li><a href="#section1">Home</a></li>
+                            <li><a href="#section2">About</a></li>
+                            <li><a href="#section3">Prices</a></li>
+                            <li><a href="#section4">Gallery</a></li>
+                            <li><a href="#section5">Enquire</a></li>
+                        </ul>
+                    </div>
+                </nav> -->
+                <br>
+                <br>
+                <div class="banner">
+                    <div class="slider" style="--quantity: 10">
+                        <div class="item" style="--position: 1"><img src="Portraits\6_boy.jpg"></div>
+                        <div class="item" style="--position: 2"><img src="Portraits\7_guy.jpg"></div>
+                        <div class="item" style="--position: 3"><img src="Portraits\1_girl.jpg"></div>
+                        <div class="item" style="--position: 4"><img src="Portraits\8_guy.jpg"></div>
+                        <div class="item" style="--position: 5"><img src="Portraits\6_boy.jpg"></div>
+                        <div class="item" style="--position: 6"><img src="Portraits\6_boy.jpg"></div>
+                        <div class="item" style="--position: 7"><img src="Portraits\6_boy.jpg"></div>
+                        <div class="item" style="--position: 8"><img src="Portraits\6_boy.jpg"></div>
+                        <div class="item" style="--position: 9"><img src="Portraits\6_boy.jpg"></div>
+                        <div class="item" style="--position: 10"><img src="Portraits\6_boy.jpg"></div>
+                    </div>
+                    <div class="content">
+                        <a href="#section5" class="enquire-link">
+                            <h1 data-content="ENQUIRE">
+                                ENQUIRE
+                            </h1>
+                        </a>
+                        <div class="model"></div>
+                    </div>
+                    <div class="shadow one"></div>
+                    <div class="shadow two"></div>
+                </div>
+            </section>
+        
+            <section id="section2">
+                <section id="section2-1">
+                    <br>
+                    <br>
+                    <div class="slider-s" style="
+                        --width: 100px;
+                        --height: 50px;
+                        --quantity: 6;
+                    ">
+                        <div class="lists">
+                            <div class="item-s" style="--position: 1"><img src="logos\geographic.jpg" alt=""></div>
+                            <div class="item-s" style="--position: 2"><img src="logos\hassel.png" alt=""></div>
+                            <div class="item-s" style="--position: 3"><img src="logos\prize.jpg" alt=""></div>
+                            <div class="item-s" style="--position: 4"><img src="logos\sony.jpg" alt=""></div>
+                            <div class="item-s" style="--position: 5"><img src="logos\wild.jpg" alt=""></div>
+                            <div class="item-s" style="--position: 6"><img src="logos\world.png" alt=""></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <section class="container">
+                        <p class="about">*Lens wizardry, 📸 captured in every frame. ✨ #PhotoPerfection</p>
+                    </section>
+                    <br>
+                    <div class="slider-s" reverse="true" style="
+                        --width: 200px;
+                        --height: 200px;
+                        --quantity: 6;
+                    ">
+                        <div class="lists">
+                            <div class="item-s" style="--position: 1"><img src="trofees\angel-removebg-preview.png" alt=""></div>
+                            <div class="item-s" style="--position: 2"><img src="trofees\cam-removebg-preview.png" alt=""></div>
+                            <div class="item-s" style="--position: 3"><img src="trofees\bird-removebg-preview.png" alt=""></div>
+                            <div class="item-s" style="--position: 4"><img src="trofees\book-removebg-preview.png" alt=""></div>
+                            <div class="item-s" style="--position: 5"><img src="trofees\gold-removebg-preview.png" alt=""></div>
+                            <div class="item-s" style="--position: 6"><img src="trofees\sculpture-removebg-preview.png" alt=""></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section2-2">
+                    <br>
+                    <div class="about-q">
+                        <hr>
+                        <ul>
+                            <li class="left-aligned">"Capture<br>the<br>moments<br>that<br>matter"</li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </section>
+                <section id="section2-3">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="about-d">
+                        <hr>
+                        <br>
+                        <ul>
+                            <li class="right-aligned">
+                                Malcolm Lismore is a passionate freelance photographer based on Scotland's rugged North West coast. His love for the natural world shines through in his stunning images of the Scottish landscape, wildlife, and coastal birds.<br><br>Beyond capturing nature's beauty, Malcolm also offers his expertise for a variety of events, including weddings, portraits, and special celebrations. Whether you're seeking timeless memories of your special day or a unique portrayal of your business, Malcolm's talent and dedication will ensure your vision comes to life.
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </section>
+                <section id="section2-4">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="about-vm">
+                        <hr>
+                        <ul>
+                            <li class="vision"><center>Vision</center> <br><i>To capture the essence of life's moments, one frame at a time.</i></li>
+                            <li class="mission"><center>Mission</center>  <br><i>To provide exceptional photography services that evoke emotions, tell stories, and create lasting memories.</i></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </section>
+            </section>
+            <section id="section3">
+                <div class="container3">
+                    <div class="model"></div>
+                    <div class="wrapper">
+                        <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="card">
+                            <div class="row">
+                                <div class="icon">🪻</div>
+                                <div class="description">
+                                    <h4>Wedding</h4>
+                                    <p>Love stories, told visually - from Rs.100,000.00</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c2" >
+                        <label for="c2" class="card">
+                            <div class="row">
+                                <div class="icon">🩻</div>
+                                <div class="description">
+                                    <h4>Portraits</h4>
+                                    <p>Your personality, your picture - from Rs.10,000.00</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c3" >
+                        <label for="c3" class="card">
+                            <div class="row">
+                                <div class="icon">🕯️</div>
+                                <div class="description">
+                                    <h4>Special Occasions</h4>
+                                    <p>Making every moment picture-perfect - from Rs.80,000.00</p>
+                                </div>
+                            </div>
+                        </label>
+                        <input type="radio" name="slide" id="c4" >
+                        <label for="c4" class="card">
+                            <div class="row">
+                                <div class="icon">🌳</div>
+                                <div class="description">
+                                    <h4>Nature</h4>
+                                    <p>A glimpse into nature's soul - from Rs.8,000.00</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </section>
+    
+        <section id="section4">
+            <div class="gallery">
+
+                <ul class="controls">
+                    <li class="buttons active" data-filter="all">all</li>
+                    <li class="buttons" data-filter="weddings">Weddings</li>
+                    <li class="buttons" data-filter="portraits">Portraits</li>
+                    <li class="buttons" data-filter="special-occations">Occations</li>
+                    <li class="buttons" data-filter="nature">Nature</li>
+                    <!-- <li class="buttons" data-filter="sandwich">sandwich</li> -->
+                </ul>
+            
+                <div class="image-container">
+            
+                    <a href="Wedding\wed_1.jpg" class="image weddings">
+                        <img src="Wedding\wed_1.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_2_indoor.jpg" class="image weddings">
+                        <img src="Wedding\wed_2_indoor.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_3_bride.jpg" class="image weddings">
+                        <img src="Wedding\wed_3_bride.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_4_outdoor.jpg" class="image weddings">
+                        <img src="Wedding\wed_4_outdoor.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_5_fam.jpg" class="image weddings">
+                        <img src="Wedding\wed_5_fam.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_6_outdoor.jpg" class="image weddings">
+                        <img src="Wedding\wed_6_outdoor.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_7_groom.jpg" class="image weddings">
+                        <img src="Wedding\wed_7_groom.jpg" alt="">
+                    </a>
+                    <a href="Wedding\wed_8_bridemaids.jpg" class="image weddings">
+                        <img src="Wedding\wed_8_bridemaids.jpg" alt="">
+                    </a>
+        
+        
+                    <a href="Portraits\1_girl.jpg" class="image portraits">
+                        <img src="Portraits\1_girl.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\2_girl.jpg" class="image portraits">
+                        <img src="Portraits\2_girl.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\3_girl.jpg" class="image portraits">
+                        <img src="Portraits\3_girl.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\4_girl.jpg" class="image portraits">
+                        <img src="Portraits\4_girl.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\5_guy.jpg" class="image portraits">
+                        <img src="Portraits\5_guy.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\6_boy.jpg" class="image portraits">
+                        <img src="Portraits\6_boy.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\7_guy.jpg" class="image portraits">
+                        <img src="Portraits\7_guy.jpg" alt="Portrait of a girl">
+                    </a>
+                    <a href="Portraits\8_guy.jpg" class="image portraits">
+                        <img src="Portraits\8_guy.jpg" alt="Portrait of a girl">
+                    </a>
+                    
+        
+                    <a href="Special occasions\1_Hogmanay.jpg" class="image special-occations">
+                        <img src="Special occasions\1_Hogmanay.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\2_Hogmany.jpg" class="image special-occations">
+                        <img src="Special occasions\2_Hogmany.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\3_Hogmanay.jpg" class="image special-occations">
+                        <img src="Special occasions\3_Hogmanay.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\4_hbd_table.jpg" class="image special-occations">
+                        <img src="Special occasions\4_hbd_table.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\5_hbd_girl.jpg" class="image special-occations">
+                        <img src="Special occasions\5_hbd_girl.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\6_hbd_boy.jpg" class="image special-occations">
+                        <img src="Special occasions\6_hbd_boy.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\7_20thgrl.jpg" class="image special-occations">
+                        <img src="Special occasions\7_20thgrl.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\8_hbd.jpg" class="image special-occations">
+                        <img src="Special occasions\8_hbd.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\9_hbd.jpg" class="image special-occations">
+                        <img src="Special occasions\9_hbd.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\10_hbd.jpg" class="image special-occations">
+                        <img src="Special occasions\10_hbd.jpg" alt="">
+                    </a>
+                    <a href="Special occasions\11_hbd.jpg" class="image special-occations">
+                        <img src="Special occasions\11_hbd.jpg" alt="">
+                    </a>
+            
+        
+                    <a href="Nature\1_nat.jpg" class="image nature">
+                        <img src="Nature\1_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\2_nat.jpg" class="image nature">
+                        <img src="Nature\2_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\3_nat.jpg" class="image nature">
+                        <img src="Nature\3_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\4_nat.jpg" class="image nature">
+                        <img src="Nature\4_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\5_nat.jpg" class="image nature">
+                        <img src="Nature\5_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\6_nat.jpg" class="image nature">
+                        <img src="Nature\6_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\7_nat.jpg" class="image nature">
+                        <img src="Nature\7_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\8_nat.jpg" class="image nature">
+                        <img src="Nature\8_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\9_nat.jpg" class="image nature">
+                        <img src="Nature\9_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\10_nat.jpg" class="image nature">
+                        <img src="Nature\10_nat.jpg" alt="">
+                    </a>
+                    <a href="Nature\11_nat.jpg" class="image nature">
+                        <img src="Nature\11_nat.jpg" alt="">
+                    </a>
+                </div>
+            
+            </div>
+        </section>
+        <section id="section5">
+            <iframe src="contact.html"></iframe>
+        </section>
+        <section id="section6">
+            <footer class="footer" >
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">affiliate program</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">shipping</a></li>
+                                <li><a href="#">returns</a></li>
+                                <li><a href="#">order status</a></li>
+                                <li><a href="#">payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">watch</a></li>
+                                <li><a href="#">bag</a></li>
+                                <li><a href="#">shoes</a></li>
+                                <li><a href="#">dress</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16981.82186904082!2d-5.5310750548483485!3d57.85686458038037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488e6aed1b6edf6d%3A0x6a9fc72cf1459fb6!2sSecond%20Coast%2C%20Achnasheen%20IV22%202NF%2C%20UK!5e0!3m2!1sen!2slk!4v1734418944215!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </div>
+    <section id="section7"></section>
+</body>
+</html>

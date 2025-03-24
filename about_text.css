@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=SUSE:wght@100..800&display=swap');
+
+#section2-1{
+    /* display: flex;// */
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+    background: #ffffff;
+}
+
+
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    background: #000000;
+    cursor: ew-resize;
+    white-space: nowrap;
+    padding: 10vh 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.about{
+    font-family: "SUSE", sans-serif;
+    font-size: 12vw;
+    position: relative;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0;
+    padding: 0 0;
+    will-change: transform;
+    z-index: 0;
+}
