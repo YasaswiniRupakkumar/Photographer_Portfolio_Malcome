@@ -1,0 +1,69 @@
+section#section1{
+    height: 105vh;
+    scroll-snap-align: start;
+}
+
+section#section3 {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-color: black;
+}
+
+section#section2-1 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section#section2-2 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section#section2-3 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section#section2-4 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section#section3 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+section#section4 {
+    height: auto; /* Allow content to determine height */
+    min-height: 100vh; /* Ensure it spans at least a viewport height */
+    scroll-snap-align: start; /* Keep Section 4 aligned with snapping */
+    scroll-snap-stop: always; /* Force snapping to stop here */
+    overflow-y: auto; /* Enable internal scrolling if content exceeds the viewport */
+}
+
+/* Optional: Inner scrollable gallery container */
+section#section4 .gallery-container {
+    height: 100%; /* Ensure it fits the section */
+    overflow-y: scroll; /* Make inner content scrollable */
+    scroll-snap-type: y proximity; /* Add snapping inside the gallery */
+}
+
+section#section5 {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+.fixed-section {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section#section6 {
+    height: 100vh;
+    background-color: black;
+    scroll-snap-align: end;
+}
+/*  */
